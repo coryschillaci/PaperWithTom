@@ -131,15 +131,17 @@ We explore the two body spectra of spin-$1/2$ fermions in isotropic harmonic tra
 
 \section{\label{sec:level1}Introduction}
 
-Cold atomic gases with spin-orbit coupling (SOC) have recently been an area of intense interest because of the potential to simulate interesting physical systems with precisely tunable interactions \cite{nature11841}. In condensed matter physics, spin-orbit couplings are essential for many exotic systems such as topological insulators \cite{das2013engineering,PhysRevLett.105.255302}, the quantum spin hall effect\cite{nature12185}, and spintronics \cite{RevModPhys.76.323}. The experimental setup which induces spin-orbit coupling is intimately related to simulation of synthetic gauge fields \cite{RevModPhys.83.1523,hamner2014dicke}. Because they are parity-violating like the weak force, spin-orbit couplings feature prominently in nuclear physics where they are an essential ingredient in realistic effective nuclear forces. Atomic gases provide an excellent testing ground both to explore these real life systems and create new types of spin-orbit coupling which are not yet known to exist in other materials but are interesting in their own right. 
+Cold atomic gases with spin-orbit coupling (SOC) have recently been an area of intense interest because of the potential to simulate interesting physical systems with precisely tunable interactions \cite{nature11841}. In condensed matter physics, spin-orbit couplings are essential for many exotic systems such as topological insulators \cite{das2013engineering,PhysRevLett.105.255302}, the quantum spin hall effect\cite{nature12185}, and spintronics \cite{RevModPhys.76.323}. The experimental setup which induces spin-orbit coupling is intimately related to simulation of synthetic gauge fields \cite{RevModPhys.83.1523,hamner2014dicke,Lin:2009zzb,Bermudez:2011db}. Because they are parity-violating like the weak force, spin-orbit couplings feature prominently in nuclear physics where they are an essential ingredient in realistic effective nuclear forces. Atomic gases provide an excellent testing ground both to explore universal behaviour of these real life systems and to create new types of spin-orbit coupling which are not yet known to exist (or have no solid-state analog) in other materials but are interesting in their own right. Further, these experiments can be performed in an environment with little to no defects or impurities.
 
-SOC was first realized in a Bose condensate of $^{87}$Rb \cite{nature09887} and extended shortly after to Fermi gases of $^{40}$K \cite{PhysRevLett.109.095301} and $^6$Li \cite{PhysRevLett.109.095302}. These spin-orbit interactions are `synthetic' in the sense that a subset of the hyperfine states stand in as virtual spin states. A particularly interesting consequence of these atomic Hamiltonians is the possibility of bosonic systems with synthetic spin-$1/2$ spin orbit interactions. Although we do not consider this case in our paper, the generalization is straightforward. Henceforth we will simply refer to these degrees of freedom as `spin' and use the standard notation for spin quantum numbers. 
+Spin-orbit coupling was first realized in a Bose condensate of $^{87}$Rb \cite{nature09887} and extended shortly after to Fermi gases of $^{40}$K \cite{PhysRevLett.109.095301} and $^6$Li \cite{PhysRevLett.109.095302}. These spin-orbit interactions are `synthetic' in the sense that a subset of the hyperfine states stand in as virtual spin states.   The application of these couplings is equivalent to applying an external electric or magnetic force on spin-states, but with particles that are neutral in charge \cite{Lin:2011,PhysRevLett.107.255301}.  A particularly interesting consequence of these atomic systems is the possibility of studying bosonic systems with synthetic spin-$1/2$ spin orbit interactions \cite{?????}.   It has also been conjectured that these systems could be used to physically simulate lattice gauge theories \cite{Bermudez:2010da,Mazza:2011kf}.  The SOC experiments so far have been 2-dimensional in nature (Rashba and Dresselhaus types, described in sect.\ref{sec:Hamiltonian}), but recently an experimental setup has been proposed that can simulate the 3-D SOC of the Weyl type \cite{PhysRevLett.108.235301}.
+
+Calculations of few-atom systems in a trap undergoing SOC are also being developed.  For example, the spectrum of particles within a trap with an external SOC of the Weyl type (but no relative interaction) has been theoretically determined \cite{anderson2013}.  Perturbative calculations of the SOC with two-particle systems interacting via short-ranged interactions have also been investigated, where it was shown that the leading order behaviour of the SOC was independent of the scattering, as long as the scattering length in all channels \cite{PhysRevA.89.033606},.  Recently a similar system has been calculated using a SOC consisting of equal parts Rashba and Dresselhaus interactions \cite{0953-4075-47-16-161001}.  For three particles in a trap undergoing SOC, it has been conjectured that a new type of universality occurs for bound trimers on the negative scattering length side \cite{PhysRevLett.112.013201}.  In all these calculations, the emergent spectrum is rich and complex, and offers new insights in many-body behaviour.
 
 Our objective is to provide some insight into the few-body physics of Fermi gases with spin-orbit interactions in the presence of trapping potentials and two-body interactions, which are necessarily present in cold-atom experiments. Our approach is to numerically diagonalize the Hamiltonian within a suitably truncated basis. Eigenstates of the interacting Hamiltonian without SOC are used for the basis. Section \ref{sec:Hamiltonian} introduces the specific forms of spin-orbit coupling and two-body interactions which we consider. The general method is detailed in Section \ref{sec:Weyl} for the simplest SOC.  In the remaining sections \ref{sec:Rashba}-\ref{sec:R=D} we study the spectra of additional spin-orbit couplings in order of increasing computational complexity.
 
 \section{\label{sec:Hamiltonian}Hamiltonian for Spin-orbit Couplings with Contact Interactions}
 
-In this paper we consider three different types of spin-orbit coupling (SOC). The form of spin-orbit coupling realized in experiments is a linear combination of the Rashba \cite{0022-3719-17-33-015} and linear Dresselhaus \cite{PhysRev.100.580} types,
+In this paper we simply refer to our systems by their `spin' degrees of freedom and use the standard notation for spin quantum numbers. we consider three different types of spin-orbit coupling (SOC). The form of spin-orbit coupling realized in experiments is a linear combination of the Rashba \cite{0022-3719-17-33-015} and linear Dresselhaus \cite{PhysRev.100.580} types,
 \begin{align}
 V_{R}&=\alpha_R (\sigma_x k_y-\sigma_y k_x) \label{eq:Rashba},\\
 V_{D}&=\alpha_D (\sigma_x k_y+\sigma_y k_x) \label{eq:Dresselhaus},
@@ -245,19 +247,20 @@ Using this notation, the matrix elements can be written
 \end{equation}
 Again, the reduced matrix element of the CM momentum changes the parity by connecting states with $\Delta L=\pm1$. Matrix elements are non-zero only for $\Delta s=0$ because the antisymmetry of the wave function depends on $l$ which does not change. We also note that the CM term does not affect states with singlet spin wave functions ($s=0$).
 
-\begin{figure}
-\includegraphics[height=0.28\linewidth]{Figures/sigma_dot_q_mat_elts}\nobreak
-\includegraphics[height=0.278\linewidth]{Figures/sigma_dot_q_mat_elts2}
-\caption{\label{fig:matrixElts}Absolute value of the matrix elements $|\bra{n'(11)0;00;(00)0}\vec{\sigma}\cdot\vec{q}\ket{n(00)0;00;(00)0}|$ between the ground state and $l=1$ excited states. The horizontal axis is the principal quantum number of the ground state obtained from solving  \eqref{eq:eigenvalueEqn}. From left to right, the vertical lines on the negative axis indicate the values obtained for $a=1/4$, $a=1$, $a=\pm\infty$, and $a=-1$ respectively.} 
-\end{figure}
+%
+%\begin{figure}
+%\includegraphics[height=0.28\linewidth]{Figures/sigma_dot_q_mat_elts}\nobreak
+%\includegraphics[height=0.278\linewidth]{Figures/sigma_dot_q_mat_elts2}
+%\caption{\label{fig:matrixElts}Absolute value of the matrix elements $|\bra{n'(11)0;00;(00)0}\vec{\sigma}\cdot\vec{q}\ket{n(00)0;00;(00)0}|$ between the ground state and $l=1$ excited states. The horizontal axis is the principal quantum number of the ground state obtained from solving  \eqref{eq:eigenvalueEqn}. From left to right, the vertical lines on the negative axis indicate the values obtained for $a=1/4$, $a=1$, $a=\pm\infty$, and $a=-1$ respectively.} 
+%\end{figure}
 
 Using these matrix elements, we calculated the spectrum of the two interacting particles with Weyl spin-orbit coupling. Our calculations are performed by numerically diagonalizing in a truncated basis of the harmonic oscillator states \eqref{eq:basisStates}, where a cutoff $2N+L+2n+l+3\leq E_{max}$ is set high enough that the eigenvalues of the matrix have converged to the desired accuracy.  This approach converges well only when the ground state energy is not too low. In particular, for $a$ positive but very small the principal quantum number of the ground state is increasing from negative infinity. For this regime, the matrix elements involving an $l=0$ state are actually larger when connecting to an $l=1$ state with moderately high $n$ than they are for small $n$ (in Section \ref{sec:Rashba} we show that relative coordinate excitations dominate the spectrum for the ground state). This situation is shown in the left panel of Figure \ref{fig:matrixElts}. For the excited states, $n$ is always positive and the dominant matrix elements are always with the most similar harmonic oscillator states.
 
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{Figures/WeylConvM1}\nobreak
-\includegraphics[width=0.5\linewidth]{Figures/WeylConvP1}
-\caption{\label{fig:WeylConvergence} Convergence of the eigenvalues in the truncated basis with increasing $E_{max}$.} 
-\end{figure}
+%\begin{figure}
+%\includegraphics[width=0.5\linewidth]{Figures/WeylConvM1}\nobreak
+%\includegraphics[width=0.5\linewidth]{Figures/WeylConvP1}
+%\caption{\label{fig:WeylConvergence} Convergence of the eigenvalues in the truncated basis with increasing $E_{max}$.} 
+%\end{figure}
 
 
 \begin{figure}
@@ -328,10 +331,10 @@ This interaction was also studied perturbatively in $\alpha_R$ by \cite{PhysRevA
 
 \section{\label{sec:R=D}Rashba=Dresselhaus SOC}
 
-\begin{figure}
-\includegraphics[width=0.65\linewidth]{Figures/R=D_GS}
-\caption{\label{fig:R=D_Ground_States} Comparison of the $R=D$ ground state energies for the cases $\tilde{a}=-1$ (black), $\tilde{a}=0$ (red), $\tilde{a}=1$ (blue), $\tilde{a}=\infty$ (orange).} 
-\end{figure}
+%\begin{figure}
+%\includegraphics[width=0.65\linewidth]{Figures/R=D_GS}
+%\caption{\label{fig:R=D_Ground_States} Comparison of the $R=D$ ground state energies for the cases $\tilde{a}=-1$ (black), $\tilde{a}=0$ (red), $\tilde{a}=1$ (blue), $\tilde{a}=\infty$ (orange).} 
+%\end{figure}
 
 Experiments have thus far only realized the effective Hamiltonian with equal strength Rashba and Dresselhaus couplings in the form \eqref{eq:R=D}. Energy levels of the two-body system in the one-dimensional equivalent of this Hamiltonian with the additional magnetic field couplings present in experimental realizations have been calculated by \cite{arXiv:1406.7177}. Here we treat the problem for the first time in three dimensions.
 
@@ -368,11 +371,11 @@ while the center of mass part is
 
 The dependence of the lowest energy levels on $\tilde{\alpha}_{R=D}$ for different values of the two-body scattering length is shown in Figure \ref{fig:R=D_Ground_States}. Excitation energies of low lying states are compared in Figure \ref{fig:R=DExcitationSpectrum}.
 
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{Figures/R=DExcitation_a0am1}\nobreak
-\includegraphics[width=0.5\linewidth]{Figures/R=DExcitation_ap1aInf}
-\caption{\label{fig:R=DExcitationSpectrum} Energies relative to the ground state for equal strength Rashba and Dresselhaus spin-orbit couplings. Shown only for states with even $J_z$. The left figure shows the energies without the two-body interaction, i.e. $\tilde{a}_R=0$ (black), and with negative scattering length $\tilde{a}_R=-1$ (red). The right figure shows the results for a positive scattering scattering length $\tilde{a}_R=1$ (black) and in the unitary limit $\tilde{a}_R\rightarrow\infty$ (red).} 
-\end{figure}
+%\begin{figure}
+%\includegraphics[width=0.5\linewidth]{Figures/R=DExcitation_a0am1}\nobreak
+%\includegraphics[width=0.5\linewidth]{Figures/R=DExcitation_ap1aInf}
+%\caption{\label{fig:R=DExcitationSpectrum} Energies relative to the ground state for equal strength Rashba and Dresselhaus spin-orbit couplings. Shown only for states with even $J_z$. The left figure shows the energies without the two-body interaction, i.e. $\tilde{a}_R=0$ (black), and with negative scattering length $\tilde{a}_R=-1$ (red). The right figure shows the results for a positive scattering scattering length $\tilde{a}_R=1$ (black) and in the unitary limit $\tilde{a}_R\rightarrow\infty$ (red).} 
+%\end{figure}
 
 
 \section{Conclusions}
@@ -393,7 +396,7 @@ A^{-2}=\frac{\Gamma(-n)^2}{8\pi^3}  \int_0^\infty \frac{1}{z}\left[W_{n+3/4,1/4}
 \end{equation}
 This integral can be found in \cite{GradshteynRyzhik},
 \begin{equation}
-\int_0^\infty \frac{1}{z}\left[W_{\kappa,\mu}(z) \right]^2  dz=\frac{\pi}{\sin (2\pi \mu)}\frac{\psi(\frac{1}{2}+\mu-\kappa)-\psi(\frac{1}{2}+\mu-\kappa)}{\Gamma(\frac{1}{2}+\mu-\kappa)\Gamma(\frac{1}{2}-\mu-\kappa)},\quad |\operatorname{Re} \mu\;|<1/2
+\int_0^\infty \frac{1}{z}\left[W_{\kappa,\mu}(z) \right]^2  dz=\frac{\pi}{\sin (2\pi \mu)}\frac{\psi(\frac{1}{2}+\mu-\kappa)-\psi(\frac{1}{2}+\mu-\kappa)}{\Gamma(\frac{1}{2}+\mu-\kappa)\Gamma(\frac{1}{2}-\mu-\kappa)}
 \end{equation}
 Applying this to \eqref{eq:NormIntegral} with $\kappa=n+3/4$ and $\mu=1/4$ gives the desired result,
 \begin{equation}
