@@ -1,0 +1,8 @@
+*.bbl
+*.aux
+*.blg
+*.log
+*.out
+*.pdf
+SOCouplingNotes.bib
+*converted-to.pdf
