@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    356328,       7545]
-NotebookOptionsPosition[    355187,       7503]
-NotebookOutlinePosition[    355541,       7519]
-CellTagsIndexPosition[    355498,       7516]
+NotebookDataLength[    358446,       7595]
+NotebookOptionsPosition[    357263,       7552]
+NotebookOutlinePosition[    357617,       7568]
+CellTagsIndexPosition[    357574,       7565]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -818,25 +818,30 @@ YfflHhe7pwpb/L2SY8I25M9jOinsCwfbPk07I+yWupCNkef+3/8HfiuVeg==
    3.625884436393899*^9}]
 }, Open  ]],
 
-Cell[BoxData[{
+Cell[BoxData[
  RowBox[{
-  RowBox[{"TexWidthPoints", "=", "468"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"MarginSizeInches", "=", "0.6"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"CanvasWidth", "=", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Options", " ", "for", " ", "all", " ", "plots"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
    RowBox[{
-    RowBox[{"TexWidthPoints", "/", "72.0"}], "-", 
-    RowBox[{"2", "*", "MarginSizeInches"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"CanvasHeight", "=", 
-   RowBox[{"CanvasWidth", "/", "GoldenRatio"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"TextPoint", "=", "10"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"GridLineColor", "=", "LightGray"}], ";"}]}], "Input",
+    RowBox[{"TexWidthPoints", "=", "468"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"MarginSizeInches", "=", "0.6"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"CanvasWidth", "=", 
+     RowBox[{
+      RowBox[{"TexWidthPoints", "/", "72.0"}], "-", 
+      RowBox[{"2", "*", "MarginSizeInches"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"CanvasHeight", "=", 
+     RowBox[{"CanvasWidth", "/", "GoldenRatio"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"TextPoint", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"GridLineColor", "=", "LightGray"}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.625595528097845*^9, 3.62559557417556*^9}, {
    3.6256099193733883`*^9, 3.625610014929666*^9}, {3.625860041293668*^9, 
    3.6258600649196253`*^9}, {3.625860112339609*^9, 3.6258601449425297`*^9}, 
@@ -844,7 +849,56 @@ Cell[BoxData[{
    3.625860994600378*^9}, {3.625861032607161*^9, 3.625861033366663*^9}, {
    3.625861163052005*^9, 3.62586117286788*^9}, 3.625861230707663*^9, 
    3.625861290722415*^9, {3.625861345968658*^9, 3.625861346648123*^9}, {
-   3.625861784491049*^9, 3.625861788570387*^9}}],
+   3.625861784491049*^9, 3.625861788570387*^9}, {3.6259296662953157`*^9, 
+   3.625929682468045*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Options", " ", "for", " ", "energy", " ", "spectrum", " ", "plots"}], " ",
+    "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"EGSColor", "=", "Firebrick"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ExcitationColor", "=", "Firebrick"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SpectraXPanelGap", "=", 
+     RowBox[{"{", ".1", "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"SpectraYPanelSizes", "=", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", 
+      RowBox[{".5", "/", "GoldenRatio"}]}], "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SpectraYPanelGap", "=", 
+     RowBox[{"{", ".015", "}"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SpectraYFrameLabel", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Row", "[", 
+        RowBox[{"{", 
+         RowBox[{"\"\<E-\>\"", ",", 
+          RowBox[{"Subscript", "[", 
+           RowBox[{"\"\<E\>\"", ",", "\"\<GS\>\""}], "]"}]}], "}"}], "]"}], 
+       ",", 
+       RowBox[{"Subscript", "[", 
+        RowBox[{"\"\<E\>\"", ",", "\"\<GS\>\""}], "]"}]}], "}"}]}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.625595528097845*^9, 3.62559557417556*^9}, {
+   3.6256099193733883`*^9, 3.625610014929666*^9}, {3.625860041293668*^9, 
+   3.6258600649196253`*^9}, {3.625860112339609*^9, 3.6258601449425297`*^9}, 
+   3.625860224733263*^9, 3.625860349793231*^9, {3.625860966817766*^9, 
+   3.625860994600378*^9}, {3.625861032607161*^9, 3.625861033366663*^9}, {
+   3.625861163052005*^9, 3.62586117286788*^9}, 3.625861230707663*^9, 
+   3.625861290722415*^9, {3.625861345968658*^9, 3.625861346648123*^9}, {
+   3.625861784491049*^9, 3.625861788570387*^9}, {3.6259296662953157`*^9, 
+   3.6259297101952753`*^9}, {3.625929808914954*^9, 3.625929815738763*^9}, {
+   3.625929895033474*^9, 3.625929930592931*^9}, {3.62592997341499*^9, 
+   3.62592997555238*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -1075,8 +1129,9 @@ Cell[BoxData[
                     RowBox[{"nEnergiesWeyl", "-", "1"}], ",", "1"}], "}"}]}], 
                  "]"}], ",", 
                 RowBox[{"Joined", "\[Rule]", "True"}], ",", 
-                RowBox[{"PlotStyle", "\[Rule]", "Firebrick"}]}], "]"}], "]"}],
-              ";"}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"PlotStyle", "\[Rule]", "ExcitationColor"}]}], "]"}], 
+              "]"}], ";"}], "\[IndentingNewLine]", "}"}], ",", 
+           "\[IndentingNewLine]", 
            RowBox[{"{", 
             RowBox[{"1", ",", "1"}], "}"}]}], "\[IndentingNewLine]", "]"}], 
          ";", "\[IndentingNewLine]", 
@@ -1110,8 +1165,9 @@ Cell[BoxData[
                 RowBox[{"WEnergiesm1", "[", 
                  RowBox[{"[", "1", "]"}], "]"}], ",", 
                 RowBox[{"Joined", "\[Rule]", "True"}], ",", 
-                RowBox[{"PlotStyle", "\[Rule]", "Firebrick"}]}], "]"}], "]"}],
-              ";"}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"PlotStyle", "\[Rule]", "EGSColor"}]}], "]"}], "]"}], 
+             ";"}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+           
            RowBox[{"{", 
             RowBox[{"2", ",", "1"}], "}"}]}], "\[IndentingNewLine]", "]"}], 
          " ", ";", "\[IndentingNewLine]", 
@@ -1158,8 +1214,9 @@ Cell[BoxData[
                     RowBox[{"nEnergiesWeyl", "-", "1"}], ",", "1"}], "}"}]}], 
                  "]"}], ",", 
                 RowBox[{"Joined", "\[Rule]", "True"}], ",", 
-                RowBox[{"PlotStyle", "\[Rule]", "Firebrick"}]}], "]"}], "]"}],
-              ";"}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"PlotStyle", "\[Rule]", "ExcitationColor"}]}], "]"}], 
+              "]"}], ";"}], "\[IndentingNewLine]", "}"}], ",", 
+           "\[IndentingNewLine]", 
            RowBox[{"{", 
             RowBox[{"1", ",", "2"}], "}"}]}], "\[IndentingNewLine]", "]"}], 
          ";", "\[IndentingNewLine]", 
@@ -1193,8 +1250,9 @@ Cell[BoxData[
                 RowBox[{"WEnergiesInf", "[", 
                  RowBox[{"[", "1", "]"}], "]"}], ",", 
                 RowBox[{"Joined", "\[Rule]", "True"}], ",", 
-                RowBox[{"PlotStyle", "\[Rule]", "Firebrick"}]}], "]"}], "]"}],
-              ";"}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"PlotStyle", "\[Rule]", "EGSColor"}]}], "]"}], "]"}], 
+             ";"}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+           
            RowBox[{"{", 
             RowBox[{"2", ",", "2"}], "}"}]}], "\[IndentingNewLine]", "]"}], 
          " ", ";"}], "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
@@ -1202,10 +1260,11 @@ Cell[BoxData[
        RowBox[{"Dimensions", "->", 
         RowBox[{"{", 
          RowBox[{"2", ",", "2"}], "}"}]}], ",", "\[IndentingNewLine]", 
-       RowBox[{"YPanelSizes", "\[Rule]", 
-        RowBox[{"{", 
-         RowBox[{"1", ",", 
-          RowBox[{".5", "/", "GoldenRatio"}]}], "}"}]}], ",", 
+       RowBox[{"XPanelGaps", "\[Rule]", "SpectraXPanelGap"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"YPanelSizes", "\[Rule]", "SpectraYPanelSizes"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"YPanelGaps", "\[Rule]", "SpectraYPanelGap"}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"(*", " ", "axes", " ", "*)"}], "\[IndentingNewLine]", 
        RowBox[{"XPlotRange", "\[Rule]", 
@@ -1215,7 +1274,7 @@ Cell[BoxData[
        RowBox[{"XFrameLabel", "\[Rule]", 
         RowBox[{"Subscript", "[", 
          RowBox[{"\"\<\[Alpha]\>\"", ",", "\"\<W\>\""}], "]"}]}], ",", 
-       "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
        RowBox[{"YPlotRange", "\[Rule]", 
         RowBox[{"{", 
          RowBox[{
@@ -1232,19 +1291,7 @@ Cell[BoxData[
             RowBox[{"{", 
              RowBox[{".25", ",", "2.75"}], "}"}]}], "}"}]}], "}"}]}], ",", 
        "\[IndentingNewLine]", 
-       RowBox[{"XPanelGaps", "\[Rule]", 
-        RowBox[{"{", ".1", "}"}]}], ",", "\[IndentingNewLine]", 
-       RowBox[{"YFrameLabel", "\[Rule]", 
-        RowBox[{"{", 
-         RowBox[{
-          RowBox[{"Row", "[", 
-           RowBox[{"{", 
-            RowBox[{"\"\<E-\>\"", ",", 
-             RowBox[{"Subscript", "[", 
-              RowBox[{"\"\<E\>\"", ",", "\"\<GS\>\""}], "]"}]}], "}"}], "]"}],
-           ",", 
-          RowBox[{"Subscript", "[", 
-           RowBox[{"\"\<E\>\"", ",", "\"\<GS\>\""}], "]"}]}], "}"}]}], ",", 
+       RowBox[{"YFrameLabel", "\[Rule]", "SpectraYFramLabel"}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{"YTicks", "\[Rule]", 
         RowBox[{"{", 
@@ -1254,9 +1301,10 @@ Cell[BoxData[
           RowBox[{"LinTicks", "[", 
            RowBox[{
             RowBox[{"-", "0.5"}], ",", "2.5", ",", "1", ",", "5"}], "]"}]}], 
-         "}"}]}], ",", "\[IndentingNewLine]", 
-       RowBox[{"YPanelGaps", "\[Rule]", 
-        RowBox[{"{", ".015", "}"}]}], ",", "\[IndentingNewLine]", 
+         "}"}]}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{"Labels", " ", "and", " ", "Font", " ", "Formatting"}], " ", 
+        "*)"}], "\[IndentingNewLine]", 
        RowBox[{"PanelLetter", "\[Rule]", "None"}], ",", "\[IndentingNewLine]", 
        RowBox[{"FontSize", "\[Rule]", "TextPoint"}]}], "\[IndentingNewLine]", 
       "]"}], "\[IndentingNewLine]", ",", 
@@ -1266,22 +1314,23 @@ Cell[BoxData[
      RowBox[{"CanvasMargin", "\[Rule]", "MarginSizeInches"}]}], "]"}]}], 
   "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->CompressedData["
-1:eJwdzH0s1HEcB3DzGMmwOhJZneYpdazOJTIcJ0fK0yminUShYgxn8hBqyOSh
-YfKQh7CR22G7m4c85Ty0+kN5NpmHPHajTfhDv/f3j/dee++zz/sc/5lXqLyc
-nJwDFXjPcCHKRWHDIS6jJBqyxB1xcFoxJR2mjoflQs0tjTw4zGVXQxURvxEu
-D1R+ggVF/mNwwKt0DoZ/mFuDT25wFDiUY+YqSjDPw1wN0uhJNGjW1WMAJVqd
-JrDVYNUCxoWFMMnf+Uf2cNGn3AkG5pm7wd6mLC48GWf8HBadlX8Ju2voOXDS
-Wb8GVlzltsCEK/lCqK07KoYRfmvEluCUbpgV/XoAznKOf4V1o27fodcb8TT0
-PWhehJzK9lUo2HD/DVOKT21Cdh2LqBxN34fWC8rqrpQldzt1YYPemD7c1qp2
-ganZ727DB3a1vvB0rJgHLTxdA2FZsPV9GOpM63GjtL2wNQT9C9djuZTHFCKT
-oezpiUa4N2HQDK+pHwmhxDb5MxSkhSS6Y4ft/QIKk5rSYd+MUwH8smr0HnpO
-0ethlFSnA27TDIkzs9Je2M2I6odmNndG4Ipj+ziULdZMwUAz/XnoN5G5Aq00
-2etwM373D0yy1DuEa6y0I8hgb9M8KDOc085DxdYfxMeDCsYwenmemNXwjwFz
-J9fsoNpehhfk00x5UCMgm1FLGRNwYAkTmE7p9ZQmi95EwdalHFhxQM+HoR8L
-i+G61QgxpkG5DJbFmxK1L2dXQb5QQiyVikSQRddpgzpDel0wSBZCXAgfG4Dq
-0xcHYW3ijpTsCUyGSfdrzBqi1I/kvYI/VZlCKBI5tkFm+TcxzJNsd8E0++p1
-6Od/cwPK9e/L4N/ByR1Yf8b7kNx5w8SHSqoqUsoqIxeiimOjKeS+DTKHTVps
-FuRHyGyg0ZIPB2be+kXsu77LheUmSzz4H5e30dg=
+1:eJwd0n0s1HEcB3BzuJIsVkciq9McesDqupRa3DkcPSCnXLSTUqiYG7HSias8
+3PQ47JBIzqbcTm13hTzlPPTwh8pD2XULHdGNtkpt+r2/f3z22mfvfd5/fTaI
+z0ckmpuZmfGogcdc9alBtJn9kvyyNMjRPJPAUYvcPHhl6HQxXDVrK4d9Am4N
+pKvFSjjRXf0E3roTMwi7I8o/w6QHn43w7F4+jU856EW3hPJwL2vIYOYwoGdr
+uwvU2r1gwWaXqS1QcjqBTe42ntoHDVGKQCiSe4XCjkaZAK6WuF+Ad9abX4Vt
+tcwiOMxzroVVOwSPYdb2UhW0dxzQwORoI/FxfG4blKVd74af+Ctew4cDoe9g
+RIlmFB5ZbDJAfvXTKZg9E/YN5t5d8x1yH3KIVmnMP3Cn3sommLLs6AtH2OA0
+6Azn7GqC4JXCe4fgCf+6I3BthkYItxwMFsGK+J3HYSKP0R5KuWfTbC+MuT2d
+IaBcRku5BE3nVirhr48uTXCXzZIKavdcegmzpQkXw9DDjbwMVTmNebBzLPAW
+fDXlVgkPjjDrYarO4RmcY7gSxz7pOmCbd2oX9PQ73A8nA54OQZOhdgSKPJ3H
+YfTHgknou4o7Db9nLvyAOT5Of6GRI12C3tw5RjhlPk+6EVo0vyee6aG5w7SJ
+caKs4bc3LB42+kPrX/kRUMzwEELb2ELvOsr02EUfmMUOzKunZBkiidmzW4tg
+1SKzFCY+un0XTvv2E9MbrCpgRaYH0X5b4X0oVmmJ5Tq1GnKYDi3QodepFcaZ
+Eoj6pMFuaDO6uQfWXZzXkb5sVh/Zo5WyXkrnFOE1+GE5WwXV6oAWyFa81UC5
+dq4VSvfVTMPomJAZaNb1xwR/9gzPw/p1kX9JLuwjnrRcTtdR3ncLItIDlB5Q
+cDPOCzbacTlQnGzyg25fo/iw4MAXYufuBQFUsL4K4fN/5lIj/pctyoecMYsb
+UJqVRXyjDCmBxYsFZfCMbZwCOon0lfA/McnyEQ==
   "]],
 
 Cell[BoxData[
@@ -7522,30 +7571,31 @@ Cell[CellGroupData[{
 Cell[580, 22, 637, 16, 80, "Input"],
 Cell[1220, 40, 42436, 777, 107, "Print"]
 }, Open  ]],
-Cell[43671, 820, 1200, 26, 114, "Input"],
-Cell[44874, 848, 1927, 52, 233, "Input"],
-Cell[46804, 902, 5611, 118, 335, "Input"],
+Cell[43671, 820, 1433, 32, 131, "Input"],
+Cell[45107, 854, 1986, 46, 165, "Input"],
+Cell[47096, 902, 1927, 52, 233, "Input"],
+Cell[49026, 956, 5611, 118, 335, "Input"],
 Cell[CellGroupData[{
-Cell[52440, 1024, 11928, 260, 1100, "Input"],
-Cell[64371, 1286, 181423, 3689, 337, "Output"]
+Cell[54662, 1078, 11782, 255, 1151, "Input"],
+Cell[66447, 1335, 181423, 3689, 337, "Output"]
 }, Open  ]],
-Cell[245809, 4978, 296, 7, 28, "Input"],
-Cell[246108, 4987, 2076, 49, 182, "Input"],
+Cell[247885, 5027, 296, 7, 28, "Input"],
+Cell[248184, 5036, 2076, 49, 182, "Input"],
 Cell[CellGroupData[{
-Cell[248209, 5040, 8279, 168, 743, "Input"],
-Cell[256491, 5210, 95021, 2195, 219, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[351549, 7410, 326, 7, 28, "Input"],
-Cell[351878, 7419, 186, 2, 28, "Output"]
+Cell[250285, 5089, 8279, 168, 743, "Input"],
+Cell[258567, 5259, 95021, 2195, 219, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[352101, 7426, 403, 10, 28, "Input"],
-Cell[352507, 7438, 2385, 51, 244, "Output"]
+Cell[353625, 7459, 326, 7, 28, "Input"],
+Cell[353954, 7468, 186, 2, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[354929, 7494, 157, 3, 28, "Input"],
-Cell[355089, 7499, 82, 1, 28, "Output"]
+Cell[354177, 7475, 403, 10, 28, "Input"],
+Cell[354583, 7487, 2385, 51, 244, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[357005, 7543, 157, 3, 28, "Input"],
+Cell[357165, 7548, 82, 1, 28, "Output"]
 }, Open  ]]
 }
 ]
