@@ -192,7 +192,12 @@ With these definitions, the two-body Hamiltonian can be separated into relative 
 \end{equation}
 Notably, the spin-orbit coupling appears in both terms. The tilde over the coupling constants indicates that they are dimensionless, related to the original coupling constants by dividing out the oscillator length (e.g. $\tilde{\alpha}=\alpha/b$).
 
-Eigenstates of two particles with a short range interaction in a harmonic oscillator trapping potential form a convenient basis for these calculations. These basis functions were first derived in \cite{Busch} for the isotropic case considered here, and the more general case of an anisotropic trap has been explored by \cite{PhysRevA.74.022712}. We choose the particular coupling scheme of angular momentum eigenstates,
+\begin{figure}
+\includegraphics{Figures/BuschSpectrum}
+\caption{\label{fig:BuschSpectrum}Spectrum of the two-body contact interaction Hamiltonian as a function of $a$. The horizontal lines indicate the energy eigenvalues in the unitary limit $a\rightarrow\infty$.} 
+\end{figure}
+
+Eigenstates of two particles with a short range interaction in a harmonic oscillator trapping potential form a convenient basis for these calculations. These basis functions were first derived in \cite{Busch} for the isotropic case considered here, and the more general case of an anisotropic trap has been explored by \cite{PhysRevA.74.022712}. The dependence of the energy spectrum is shown in Figure \ref{fig:BuschSpectrum} for reference. We choose the particular coupling scheme of angular momentum eigenstates,
 \begin{equation}\label{eq:basisStates}
 \ket{n(ls)j;NL;(jL)J},
 \end{equation}
@@ -251,16 +256,17 @@ Again, the reduced matrix element of the CM momentum changes the parity by conne
 
 
 \begin{figure}
-\includegraphics[height=0.28\linewidth]{Figures/sigma_dot_q_mat_elts}\nobreak
-\includegraphics[height=0.278\linewidth]{Figures/sigma_dot_q_mat_elts2}
-\caption{\label{fig:matrixElts}Absolute value of the matrix elements $|\bra{n'(11)0;00;(00)0}\vec{\sigma}\cdot\vec{q}\ket{n(00)0;00;(00)0}|$ between the ground state and $l=1$ excited states. The horizontal axis is the principal quantum number of the ground state obtained from solving  \eqref{eq:eigenvalueEqn}. From left to right, the vertical lines on the negative axis indicate the values obtained for $a=1/4$, $a=1$, $a=\pm\infty$, and $a=-1$ respectively.} 
+\includegraphics{Figures/MatrixElts}
+\caption{\label{fig:matrixElts}Absolute value of the matrix elements $|\bra{n'(11)0;00;(00)0}\vec{\sigma}\cdot\vec{q}\ket{n(00)0;00;(00)0}|$ between the ground state and $l=1$ excited states. The horizontal axis is the principal quantum number of the ground state obtained from solving  \eqref{eq:eigenvalueEqn}. From left to right, the vertical lines on the negative axis indicate the values obtained for $\tilde{a}=1/4$, $\tilde{a}=1$, $\tilde{a}=\pm\infty$, and $\tilde{a}=-1$ respectively.} 
 \end{figure}
 
-Using these matrix elements, we calculated the spectrum of the two interacting particles with Weyl spin-orbit coupling. Our calculations are performed by numerically diagonalizing in a truncated basis of the harmonic oscillator states \eqref{eq:basisStates}, where a cutoff $2N+L+2n+l+3\leq E_{max}$ is set high enough that the eigenvalues of the matrix have converged to the desired accuracy.  This approach converges well only when the ground state energy is not too low. In particular, for $a$ positive but very small the principal quantum number of the ground state is increasing from negative infinity. For this regime, the matrix elements involving an $l=0$ state are actually larger when connecting to an $l=1$ state with moderately high $n$ than they are for small $n$ (in Section \ref{sec:Rashba} we show that relative coordinate excitations dominate the spectrum for the ground state). This situation is shown in the left panel of Figure \ref{fig:matrixElts}. For excited states, $n$ is always positive and the dominant matrix elements are always with the most similar harmonic oscillator states.
+Using these matrix elements, we calculated the spectrum of the two interacting particles with Weyl spin-orbit coupling. Our calculations are performed by numerically diagonalizing in a truncated basis of the harmonic oscillator states \eqref{eq:basisStates}, where a cutoff $2N+L+2n+l+3\leq E_{max}$ is set high enough that the eigenvalues of the matrix have converged to the desired accuracy.  
+
+This approach converges well only when the ground state energy is not too low. In particular, for $a$ positive but very small the principal quantum number of the ground state is increasing from negative infinity as seen in Figure \ref{fig:BuschSpectrum}. From Figure \ref{fig:matrixElts}, we can see that as $n$ becomes more negative, the principal quantum number of the dominant matrix element is also increasing. Because convergence of any energy level requires an cutoff much larger than the energy of most strongly coupled states, a sufficiently high $E_{max}$ to ensure an accurate ground state energy becomes infeasible for small positive $a$. For excited states, $n$ is always positive and matrix elements with similar $n$ always dominate. 
 
 \begin{figure}
 \includegraphics{Figures/WeylConvergence}
-\caption{\label{fig:WeylConvergence} Convergence of the eigenvalues in the truncated basis with increasing $E_{max}$. The left figure shows convergence for $\tilde{a}=-1$ and $\tilde{\alpha}_W=0.5$. In the right panel  $\tilde{a}=1$ and $\tilde{\alpha}_W=0.5$.} 
+\caption{\label{fig:WeylConvergence} A convergence plot giving the change in energy eigenvalue, $\Delta E$, for the lowest eight energy levels when a shell is added as a function of $E_{max}$.  The left figure shows convergence for $\tilde{a}=-1$ and $\tilde{\alpha}_W=0.5$. In the right panel  we show $\tilde{a}=1$ and $\tilde{\alpha}_W=0.5$, demonstrating that convergence of the states with negative $n$ is poor.} 
 \end{figure}
 
 
@@ -269,7 +275,7 @@ Using these matrix elements, we calculated the spectrum of the two interacting p
 \end{figure}
 
 
-As a result, convergence of the ground state is actually more difficult than that for nearby excited states. Furthermore, our approach gives the best convergence when $a$ is not small and positive. We compare the convergence of the $a=-1$ and $a=1$ spectra in Figure \ref{fig:WeylConvergence} to demonstrate how the matrix truncation plays out in practice. The actual energy spectrum is shown in Figure \ref{fig:WeylSpectrum}. We estimate that all of the energies shown have converged to within no more than $.01\hbar\omega$. For $a=0$, the convergence is to within $10^{-5}\hbar\omega$.
+As a result, convergence of the ground state is actually more difficult than that for nearby excited states. Furthermore, our approach gives the best convergence when $a$ is not small and positive. We compare the convergence of the $\tilde{a}=-1$ and $\tilde{a}=1$ spectra in Figure \ref{fig:WeylConvergence} to demonstrate how the matrix truncation plays out in practice. The actual energy spectrum is shown in Figure \ref{fig:WeylSpectrum}. 
 
 \section{\label{sec:Rashba}The Pure Rashba SOC}
 
@@ -290,7 +296,6 @@ Because the spin orbit coupling is now a $k=1$ tensor rather than a scalar opera
  \ninej{\hphantom{l}l'\hphantom{l}}{\hphantom{l}l\hphantom{l}}{\hphantom{l}1\hphantom{l}}{s'}{s}{1}{j'}{j}{1} (s'-s) \braket{n'l' || q || n l},
 \end{split}
 \end{equation}
-This expression presents somewhat more numerical difficulty than \eqref{eq:WeylRel} because of the dependence on many Wigner $j$ symbols which become expensive for larger angular momentum quantum numbers.
 
 For the CM part of the Hamiltonian we again expand the basis states in the alternate coupling scheme to obtain the matrix elements,
 \begin{equation}\begin{split}
@@ -301,7 +306,6 @@ For the CM part of the Hamiltonian we again expand the basis states in the alter
  \ninej{\hphantom{l}L'\hphantom{l}}{\hphantom{l}L\hphantom{l}}{\hphantom{l}1\hphantom{l}}{1}{1}{1}{\mathcal{J}'}{\mathcal{J}}{1} .
 \end{split}
 \end{equation}
-Similarly to the relative term, the Wigner 9-$j$ symbol and the double summation  increase the computational cost of evaluating matrix elements over the Weyl case.
 
 \begin{figure}
 \includegraphics{Figures/RashbaSpectrum}
@@ -309,20 +313,22 @@ Similarly to the relative term, the Wigner 9-$j$ symbol and the double summation
 \end{figure}
 
 
-Our results for the Rashba SOC are shown in Figure \ref{fig:RashbaSpectrum}. Because the Rashba spin-orbit coupling is a vector operator, states of all possible $J$ must be included in any calculation and the size of the basis scales much more quickly with $E_{max}$. These were computed with an $E_{max}$ of 20, for which we believe the energies convergence to within $0.1\hbar\omega$ for all $a$ over the range of $\alpha_R$ shown. The best convergence is obtained for $a=0$, where the eigenvalues are within $\approx 10^{-5} \hbar \omega$ of the exact values.
+Our results for the Rashba SOC are shown in Figure \ref{fig:RashbaSpectrum}. Because the Rashba spin-orbit coupling is a vector operator, states of all possible $J$ must be included in any calculation and the size of the basis scales much more quickly with $E_{max}$. These spectra were computed with an $E_{max}$ of $24\hbar\omega$, for which there are approximately $36,000$ basis states. All displayed eigenvalues of the Hamiltonian shift by less than $10^{-2}\hbar\omega$ if an additional shell of states is included.
 
 \begin{figure}
-\includegraphics[height=0.4\linewidth]{Figures/ComparisonWithPertap1}
-\caption{\label{fig:ComparisonSpectrum} Comparison of selected spectral lines (black) with the perturbative predictions from \cite{PhysRevA.89.033606} (red) when $a=1$. } 
+\includegraphics{Figures/PerturbativeComparison}
+\caption{\label{fig:ComparisonSpectrum} Comparison of selected spectral lines (solid black) with the perturbative predictions from \cite{PhysRevA.89.033606} (dashed red) when $\tilde{a}=\infty$. } 
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{Figures/NoCMa-1}
-\caption{\label{fig:ComparisonSpectrum2} A comparison of the energy levels with and without the inclusion of excitations in the CM coordinate. The approximation of ignoring CM excitations provides very accurate results for the ground state, but not for excited states.} 
+\includegraphics{Figures/ComparisonNoCM}
+\caption{\label{fig:ComparisonSpectrum2} A comparison of the energy levels with (solid black) and without (dashed red) the inclusion of excitations in the CM coordinate for $\tilde(a)=-1$. The approximation of ignoring CM excitations provides very accurate results for the ground state, but not for excited states.} 
 \end{figure}
 
 
-This interaction was also studied perturbatively in $\alpha_R$ by \cite{PhysRevA.89.033606}, including the possibility of a spin dependent two-body interaction, under the assumption that center of mass excitations are unimportant. For the specific case of identical fermions with spin independent scattering length considered here, they found that the first correction to the energies occurs at order $\alpha_R^2$ and is independent of the scattering length $a$. We compare their perturbative predictions with our numerical results in Figure \ref{fig:ComparisonSpectrum}. By setting all matrix elements with $N,L>0$ in the bra or ket to zero, we explored their approximation of ignoring CM excitations. Figure \ref{fig:ComparisonSpectrum2} shows that this is very accurate for the ground state, but less accurate for excited states. We also note that in the case of small positive $a$, the landscape of low lying excited states is dominated by center-of-mass excitations. In the absence of spin-orbit coupling when $a\rightarrow0^+$, there are an infinite number of states with non-zero CM quantum numbers whose energies lie between the ground state and the first relative coordinate excitation.
+This interaction was also studied perturbatively in $\alpha_R$ by \cite{PhysRevA.89.033606}, including the possibility of a spin dependent two-body interaction, under the assumption that center of mass excitations are unimportant. For the specific case of identical fermions with spin independent scattering length considered here, they found that the first correction to the energies occurs at order $\alpha_R^2$ and is independent of the scattering length $a$. We compare their perturbative predictions, which are derived from the non-degenerate theory, with our numerical results in Figure \ref{fig:ComparisonSpectrum}. 
+
+By setting all matrix elements with $N,L>0$ in the bra or ket to zero, we also explored the approximation of ignoring CM excitations. Figure \ref{fig:ComparisonSpectrum2} shows that this is very accurate for the ground state, but less accurate for excited states. We also note that in the case of small positive $a$, the landscape of low lying excited states is dominated by center-of-mass excitations. In the absence of spin-orbit coupling when $a\rightarrow0^+$, there are an infinite number of states with non-zero CM quantum numbers whose energies lie between the ground state and the first relative coordinate excitation.
 
 
 \section{\label{sec:R=D}Rashba=Dresselhaus SOC}
