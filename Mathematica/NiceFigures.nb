@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1881363,      37647]
-NotebookOptionsPosition[   1878261,      37550]
-NotebookOutlinePosition[   1878615,      37566]
-CellTagsIndexPosition[   1878572,      37563]
+NotebookDataLength[   1881657,      37651]
+NotebookOptionsPosition[   1878555,      37554]
+NotebookOutlinePosition[   1878909,      37570]
+CellTagsIndexPosition[   1878866,      37567]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -11613,17 +11613,19 @@ Cell[BoxData[
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"RDEnergiesm1", "=", 
-     RowBox[{
-     "Import", "[", 
-      "\"\</Users/cdschillaci/Desktop/Paper\\ with\\ \
-Tom/Mathematica/Saved/aRDm1.m\>\"", "]"}]}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"Import", "[", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{"RootPath", ",", "\"\<Saved\>\"", ",", "\"\<aRDm1.m\>\""}], 
+        "}"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"RDExcitationsm1", "=", 
-     RowBox[{
-     "Import", "[", 
-      "\"\</Users/cdschillaci/Desktop/Paper\\ with\\ \
-Tom/Mathematica/Saved/aRDm1Excitation.m\>\"", "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+     RowBox[{"Import", "[", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "RootPath", ",", "\"\<Saved\>\"", ",", "\"\<aRDm1Excitation.m\>\""}], 
+        "}"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"RDEnergiesm1", "=", 
      RowBox[{"Clean", "[", "RDEnergiesm1", "]"}]}], ";"}], 
@@ -11634,17 +11636,19 @@ Tom/Mathematica/Saved/aRDm1Excitation.m\>\"", "]"}]}], ";"}],
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"RDEnergiesInf", "=", 
-     RowBox[{
-     "Import", "[", 
-      "\"\</Users/cdschillaci/Desktop/Paper\\ with\\ \
-Tom/Mathematica/Saved/aRDInf.m\>\"", "]"}]}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"Import", "[", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{"RootPath", ",", "\"\<Saved\>\"", ",", "\"\<aRDInf.m\>\""}], 
+        "}"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"RDExcitationsInf", "=", 
-     RowBox[{
-     "Import", "[", 
-      "\"\</Users/cdschillaci/Desktop/Paper\\ with\\ \
-Tom/Mathematica/Saved/aRDInfExcitation.m\>\"", "]"}]}], ";"}], 
-   "\[IndentingNewLine]", 
+     RowBox[{"Import", "[", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "RootPath", ",", "\"\<Saved\>\"", ",", "\"\<aRDInfExcitation.m\>\""}],
+         "}"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"RDEnergiesInf", "=", 
      RowBox[{"Clean", "[", "RDEnergiesInf", "]"}]}], ";"}], 
@@ -11666,7 +11670,7 @@ Tom/Mathematica/Saved/aRDInfExcitation.m\>\"", "]"}]}], ";"}],
    3.627249600430244*^9, 3.627249610452929*^9}, {3.62724995383718*^9, 
    3.6272499539366283`*^9}, {3.627249991856595*^9, 3.627249994823914*^9}, {
    3.6272500292274942`*^9, 3.627250029343466*^9}, {3.627250818958683*^9, 
-   3.627250836276168*^9}}],
+   3.627250836276168*^9}, {3.6273084600318317`*^9, 3.627308509787024*^9}}],
 
 Cell[CellGroupData[{
 
@@ -37589,66 +37593,66 @@ Cell[282413, 5728, 684, 10, 28, "Output"]
 }, Open  ]],
 Cell[283112, 5741, 2704, 69, 233, "Input"],
 Cell[CellGroupData[{
-Cell[285841, 5814, 10682, 234, 1023, "Input"],
+Cell[285841, 5814, 10682, 234, 1020, "Input"],
 Cell[296526, 6050, 286695, 5519, 271, 247968, 4882, "CachedBoxData", \
 "BoxData", "Output"]
 }, Open  ]],
 Cell[583236, 11572, 1048, 20, 28, "Input"],
-Cell[584287, 11594, 3054, 74, 250, "Input"],
+Cell[584287, 11594, 3348, 78, 233, "Input"],
 Cell[CellGroupData[{
-Cell[587366, 11672, 11087, 241, 1023, "Input"],
-Cell[598456, 11915, 324, 5, 28, "Output"]
+Cell[587660, 11676, 11087, 241, 1020, "Input"],
+Cell[598750, 11919, 324, 5, 28, "Output"]
 }, Open  ]],
-Cell[598795, 11923, 1195, 22, 28, "Input"],
-Cell[599993, 11947, 2194, 50, 148, "Input"],
+Cell[599089, 11927, 1195, 22, 28, "Input"],
+Cell[600287, 11951, 2194, 50, 148, "Input"],
 Cell[CellGroupData[{
-Cell[602212, 12001, 8148, 170, 658, "Input"],
-Cell[610363, 12173, 122389, 2653, 209, 92521, 2162, "CachedBoxData", \
+Cell[602506, 12005, 8148, 170, 658, "Input"],
+Cell[610657, 12177, 122389, 2653, 209, 92521, 2162, "CachedBoxData", \
 "BoxData", "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[732789, 14831, 15230, 301, 913, "Input"],
-Cell[748022, 15134, 443673, 8148, 209, 399466, 7424, "CachedBoxData", \
+Cell[733083, 14835, 15230, 301, 913, "Input"],
+Cell[748316, 15138, 443673, 8148, 209, 399466, 7424, "CachedBoxData", \
 "BoxData", "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1191732, 23287, 558, 12, 28, "Input"],
-Cell[1192293, 23301, 1119, 16, 28, "Output"]
+Cell[1192026, 23291, 558, 12, 28, "Input"],
+Cell[1192587, 23305, 1119, 16, 28, "Output"]
 }, Open  ]],
-Cell[1193427, 23320, 4939, 123, 250, "Input"],
+Cell[1193721, 23324, 4939, 123, 250, "Input"],
 Cell[CellGroupData[{
-Cell[1198391, 23447, 6184, 142, 493, "Input"],
-Cell[1204578, 23591, 60169, 1370, 209, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[1264784, 24966, 5425, 125, 476, "Input"],
-Cell[1270212, 25093, 66535, 1530, 209, "Output"]
+Cell[1198685, 23451, 6184, 142, 493, "Input"],
+Cell[1204872, 23595, 60169, 1370, 209, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1336784, 26628, 5513, 127, 442, "Input"],
-Cell[1342300, 26757, 72444, 1628, 209, "Output"]
+Cell[1265078, 24970, 5425, 125, 476, "Input"],
+Cell[1270506, 25097, 66535, 1530, 209, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1414781, 28390, 545, 12, 28, "Input"],
-Cell[1415329, 28404, 452, 6, 28, "Output"]
+Cell[1337078, 26632, 5513, 127, 442, "Input"],
+Cell[1342594, 26761, 72444, 1628, 209, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1415818, 28415, 5519, 122, 424, "Input"],
-Cell[1421340, 28539, 91016, 1965, 209, "Output"]
+Cell[1415075, 28394, 545, 12, 28, "Input"],
+Cell[1415623, 28408, 452, 6, 28, "Output"]
 }, Open  ]],
-Cell[1512371, 30507, 436, 11, 28, "Input"],
-Cell[1512810, 30520, 4579, 120, 250, "Input"],
 Cell[CellGroupData[{
-Cell[1517414, 30644, 2898, 66, 320, "Input"],
-Cell[1520315, 30712, 611, 8, 28, "Output"]
+Cell[1416112, 28419, 5519, 122, 424, "Input"],
+Cell[1421634, 28543, 91016, 1965, 209, "Output"]
 }, Open  ]],
-Cell[1520941, 30723, 385, 11, 28, "Input"],
-Cell[1521329, 30736, 7576, 211, 444, "Input"],
+Cell[1512665, 30511, 436, 11, 28, "Input"],
+Cell[1513104, 30524, 4579, 120, 250, "Input"],
 Cell[CellGroupData[{
-Cell[1528930, 30951, 16406, 350, 998, "Input"],
-Cell[1545339, 31303, 332551, 6233, 234, "Output"]
+Cell[1517708, 30648, 2898, 66, 320, "Input"],
+Cell[1520609, 30716, 611, 8, 28, "Output"]
 }, Open  ]],
-Cell[1877905, 37539, 352, 9, 28, "Input"]
+Cell[1521235, 30727, 385, 11, 28, "Input"],
+Cell[1521623, 30740, 7576, 211, 444, "Input"],
+Cell[CellGroupData[{
+Cell[1529224, 30955, 16406, 350, 998, "Input"],
+Cell[1545633, 31307, 332551, 6233, 234, "Output"]
+}, Open  ]],
+Cell[1878199, 37543, 352, 9, 28, "Input"]
 }
 ]
 *)
