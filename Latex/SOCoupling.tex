@@ -19,7 +19,9 @@
 %  4)  latex apssamp.tex
 %
 \documentclass[%
- preprint,
+ onecolumn,
+ notitlepage,
+ %preprint,
 %superscriptaddress,
 %groupedaddress,
 %unsortedaddress,
@@ -130,7 +132,7 @@ We explore the two-body spectra of spin-$1/2$ fermions in isotropic harmonic tra
 
 \section{\label{sec:level1}Introduction}
 
-Cold atomic gases with spin-orbit coupling (SOC) have recently been an area of intense interest because of the potential to simulate interesting physical systems with precisely tunable interactions \cite{nature11841}. In condensed matter physics, spin-orbit couplings are essential for many exotic systems such as topological insulators \cite{das2013engineering,PhysRevLett.105.255302}, the quantum spin hall effect\cite{nature12185}, and spintronics \cite{RevModPhys.76.323}. The experimental setup which induces spin-orbit coupling is intimately related to simulation of synthetic gauge fields \cite{RevModPhys.83.1523,hamner2014dicke,Lin:2009zzb,Bermudez:2011db}. Because these couplings are parity-violating, they potentially play similar roles within nuclear systems that undergo parity-violating transitions due to the nuclear weak force.  Atomic gases provide an excellent testing ground both to explore universal behaviour of these real life systems and to create new types of spin-orbit coupling which are not yet known to exist (or have no solid-state analog) in other materials but are interesting in their own right. Further, these experiments can be performed in an environment with little to no defects or impurities.
+Cold atomic gases with spin-orbit coupling (SOC) have recently been an area of intense interest because of the potential to simulate interesting physical systems with precisely tunable interactions \cite{nature11841}. In condensed matter physics, spin-orbit couplings are essential for many exotic systems such as topological insulators \cite{das2013engineering,PhysRevLett.105.255302}, the quantum spin hall effect \cite{nature12185}, and spintronics \cite{RevModPhys.76.323}. The experimental setup which induces spin-orbit coupling is intimately related to simulation of synthetic gauge fields \cite{RevModPhys.83.1523,hamner2014dicke,Lin:2009zzb,Bermudez:2011db}. Because these couplings are parity-violating, they potentially play similar roles within nuclear systems that undergo parity-violating transitions due to the nuclear weak force.  Atomic gases provide an excellent testing ground both to explore universal behaviour of these real life systems and to create new types of spin-orbit coupling which are not yet known to exist (or have no solid-state analog) in other materials but are interesting in their own right. Further, these experiments can be performed in an environment with little to no defects or impurities.
 
 Spin-orbit coupling was first realized in a Bose condensate of $^{87}$Rb \cite{nature09887} and extended shortly after to Fermi gases of $^{40}$K \cite{PhysRevLett.109.095301} and $^6$Li \cite{PhysRevLett.109.095302}. These spin-orbit interactions are `synthetic' in the sense that a subset of the hyperfine states stand in as virtual spin states. A particularly interesting consequence of this is the possibility of studying systems with synthetic spin-$1/2$ spin-orbit interactions but bosonic statistics \cite{PhysRevA.68.063612,nature09887}. From another point of view, the couplings are equivalent to applying external electromagnetic forces via synthetic gauge couplings on the physically uncharged particles in the gas \cite{Lin:2011,PhysRevLett.107.255301}. It has also been conjectured that these systems could be used to physically simulate lattice gauge theories \cite{Bermudez:2010da,Mazza:2011kf}.  Spin-orbit couplings in solid state systems arise in 2D systems (Rashba and Dresselhaus types, described in sect.~\ref{sec:Hamiltonian}), but recently an experimental setup has been proposed that can simulate the Weyl type SOC which is fundamentally three dimensional \cite{PhysRevLett.108.235301}.
 
@@ -158,7 +160,7 @@ V_{W}\equiv\alpha_W \vec{k}\cdot\vec{\sigma},
 \end{equation}
 has also been proposed in \cite{PhysRevLett.108.235301} and \cite{PhysRevLett.111.125301}. 
 
-In the following sections we calculate the spectra of two particles with a short-range two-body interaction, an isotropic harmonic trapping potential and spin-orbit coupling. The single particle Hamiltonian is,
+In the following sections we calculate the spectra of two particles with a short-range two-body interaction, an isotropic harmonic trapping potential and spin-orbit coupling. The single particle Hamiltonian is 
 \begin{equation}\label{eq:shortRangeInteraction}
 H_1=\frac{\hbar^2 k^2}{2m}+\frac{1}{2}m\omega^2 r^2 + V_{SO}.
 \end{equation}
@@ -168,7 +170,7 @@ We assume that the range of interaction between particles is small compared to t
 \begin{equation}
 \frac{4\pi \hbar^2}{m}a(\Lambda)\ .
 \end{equation}
-Here the argument $\Lambda$ refers to some cutoff scale and $a(\Lambda)$ is some function of the cutoff and physical scattering length $a_{\text{phys}}$.  The exact form of $a(\Lambda)$ depends on the type of regulator used and is not relevant for this work; the only constraint is that $a(\Lambda)$ reproduce the physical scattering length given by the scattering $T$-matrix at threshold, $T(E=0)=4\pi\hbar^2 a_{\text{phys}}/m$ \cite{taylor2000}. In the limit $\Lambda\rightarrow \infty$ the spectrum of two particles in an oscillator well (without external spin-orbit interaction) was solved by Busch et al. \cite{Busch} using the method of pseudo-potentials.  In reference  \cite{Luu:2006xv} the solution for general $\Lambda$ was given using a Gaussian regulator, which in the limit $\Lambda\rightarrow\infty$ recovered the Busch et al. solution.  For our work below we use the eigenstates and eigenvalues of this two-particle system given by Ref.\cite{Busch}.
+Here the argument $\Lambda$ refers to some cutoff scale and $a(\Lambda)$ is some function of the cutoff and physical scattering length $a_{\text{phys}}$.  The exact form of $a(\Lambda)$ depends on the type of regulator used and is not relevant for this work; the only constraint is that $a(\Lambda)$ reproduce the physical scattering length given by the scattering $T$-matrix at threshold, $T(E=0)=4\pi\hbar^2 a_{\text{phys}}/m$ \cite{taylor2000}. In the limit $\Lambda\rightarrow \infty$ the spectrum of two particles in an oscillator well (without external spin-orbit interaction) was solved by Busch et al. \cite{Busch} using the method of pseudo-potentials.  In reference  \cite{Luu:2006xv} the solution for general $\Lambda$ was given using a Gaussian regulator, which in the limit $\Lambda\rightarrow\infty$ recovered the Busch et al. solution.  For our work below we use the eigenstates and eigenvalues of this two-particle system given by Ref. \cite{Busch}.
 
 \section{\label{sec:Weyl}Weyl coupling}
 We tackle the Weyl form first because of its mathematical and numerical simplicity. In the absence of the two-body interaction, this problem was treated by reference \cite{0953-4075-46-13-134003}. Our approach is to determine the matrix elements of the SOC in an appropriate basis. The eigenvalue is then solved numerically at the desired precision by choosing an appropriately large truncated basis of harmonic oscillator eigenstates.
@@ -179,20 +181,20 @@ R=\frac{r_1+r_2}{\sqrt{2}b}, \qquad r=\frac{r_1-r_2}{\sqrt{2}b},
 \end{equation}
 and the corresponding conjugate momenta $q,Q$ representing the relative and total momenta. For an isotropic harmonic oscillator, distances can be expressed in terms of the ground state length scale $b=\sqrt{\hbar/m\omega}$ and energies will be similarly measured in units of $E_0=\hbar\omega$. We also define the spin operators
 \begin{equation}
-\vec{\sigma}=\vec{\sigma}_1-\vec{\sigma}_2, \qquad \vec{\Sigma}=\vec{\sigma}_1+\vec{\sigma}_2.
+\vec{\sigma}\equiv\vec{\sigma}_1-\vec{\sigma}_2, \qquad \vec{\Sigma}\equiv\vec{\sigma}_1+\vec{\sigma}_2.
 \end{equation}
 
 With these definitions, the two-body Hamiltonian can be separated into relative and center of mass (CM) parts,
 \begin{equation}\label{eq:WeylHamiltonian}
-\frac{1}{\hbar\omega}H=\left(h_{0,\text{rel}}+\frac{\tilde{\alpha}_W}{\sqrt{2}} \vec{q}\cdot\vec{\sigma} + \sqrt{2}\pi \tilde{a}(\Lambda) \delta^{(3)}(r)\right)+\left(h_{0,\text{CM}}+\frac{\tilde{\alpha}_W}{\sqrt{2}} \vec{Q}\cdot\vec{\Sigma} \right)
+\frac{1}{\hbar\omega}H=\left(h_{0,\text{rel}}+\frac{\tilde{\alpha}_W}{\sqrt{2}} \vec{q}\cdot\vec{\sigma} + \sqrt{2}\pi \tilde{a}(\Lambda) \delta^{(3)}(r)\right)+\left(h_{0,\text{CM}}+\frac{\tilde{\alpha}_W}{\sqrt{2}} \vec{Q}\cdot\vec{\Sigma} \right),
 \end{equation}
-Notably, the spin-orbit coupling appears in both terms.  The tilde over the coupling constants indicates that they are dimensionless, related to the original coupling constants by dividing out the oscillator length (e.g. $\tilde{\alpha}=\alpha/b$). Throughout the remainder of this paper we will refer to dimensionless eigenvalues of $H/\hbar\omega$ as the energies of the system.
+where $h_{0,\text{rel}}=r^2/2$ and $h_{0,\text{CM}}=R^2/2$. Notably, the spin-orbit coupling appears in both terms.  The tilde over the coupling constants indicates that they are dimensionless, related to the original coupling constants by dividing out the oscillator length (e.g. $\tilde{\alpha}=\alpha/b$). Throughout the remainder of this paper we will refer to dimensionless eigenvalues of $H/\hbar\omega$ as the energies of the system.
 
-We point out that the structure of the spin-orbit term in relative coordinates in Eq.~\eqref{eq:WeylHamiltonian} is exactly of the form that appears in weak-interaction parity-violating proton-proton scattering\cite{Haxton:2013aca,deVries:2014vqa}.  Aside from Coulomb contributions, the $^1S_0$ channel of proton-proton scattering has a scattering length that is an order of magnitude larger than its effective range.  The parity conserving part of the nuclear potential could therefore be represented by the contact interaction in Eq.~\eqref{eq:WeylHamiltonian}.  The CM spin-orbit term (i.e. the last term in Eq.~\eqref{eq:WeylHamiltonian}) spoils this analogy. However, we will show later that the effect of this term on the ground state is negligible. 
+We point out that the structure of the spin-orbit term in relative coordinates in Eq.~\eqref{eq:WeylHamiltonian} is exactly of the form that appears in weak-interaction parity-violating proton-proton scattering \cite{Haxton:2013aca,deVries:2014vqa}.  Aside from Coulomb contributions, the $^1S_0$ channel of proton-proton scattering has a scattering length that is an order of magnitude larger than its effective range.  The parity conserving part of the nuclear potential could therefore be represented by the contact interaction in Eq.~\eqref{eq:WeylHamiltonian}.  The CM spin-orbit term (i.e. the last term in Eq.~\eqref{eq:WeylHamiltonian}) spoils this analogy. However, we will show later that the effect of this term on the ground state is negligible. 
 
 \begin{figure}
 \includegraphics{Figures/BuschSpectrum}
-\caption{\label{fig:BuschSpectrum}Spectrum of the two-body contact interaction Hamiltonian as a function of $a$. The horizontal lines indicate the dimensionless energy eigenvalues in the unitary limit $|\tilde{a}|\rightarrow\infty$.} 
+\caption{\label{fig:BuschSpectrum}Spectrum of the two-body contact interaction Hamiltonian as a function of $\tilde a$. The horizontal lines indicate the dimensionless energy eigenvalues in the unitary limit $|\tilde{a}|\rightarrow\infty$.} 
 \end{figure}
 
 Eigenstates of two particles with a short range interaction in a harmonic oscillator trapping potential form a convenient basis for these calculations. These basis functions were first derived in \cite{Busch} for the isotropic case considered here, and the more general case of an anisotropic trap has been explored by \cite{PhysRevA.74.022712}. The dependence of the energy spectrum on the scattering length $a$ is shown in Figure~\ref{fig:BuschSpectrum} for reference. Qualitatively, the effect of the short-range interaction is to shift the harmonic oscillator oscillator energies by $\pm \hbar\omega$ as the scattering length goes to $\pm \infty$. For positive scattering length, there is also an additional negative energy dimer state.
@@ -236,9 +238,9 @@ Between states with $l,l'\neq0$, reduced matrix elements of the momentum operato
    \right.
    \end{split}
 \end{align}
-If $l=1$ and $l'=0$ or vice versa, reduced matrix elements between one of modified wave function of the form~\eqref{eq:BuschWF} and one pure harmonic oscillator state are needed. These are given by,
+If $l=1$ and $l'=0$ or vice versa, reduced matrix elements between one of modified wave function of the form~\eqref{eq:BuschWF} and one pure harmonic oscillator state are needed. These are given by
 \begin{align}
-\braket{n l=0 || q || n' l'=1}=-i A(n) \sqrt{\frac{\Gamma(n'+5/2)}{2\pi^3 n'!}}\frac{2n-2n'-1}{2(n'-n)(1+n'-n)},
+\braket{n l=0 || q || n' l'=1}=-i A(n) \sqrt{\frac{\Gamma(n'+5/2)}{2\pi^3 n'!}}\frac{2n-2n'-1}{2(n'-n)(1+n'-n)}
 \end{align}
 and its Hermitian conjugate.
 
@@ -271,7 +273,7 @@ This approach converges well only when the ground state energy is not too low. I
 
 
 \begin{figure}
-\includegraphics{Figures/WeylSpectrum}\caption{\label{fig:WeylSpectrum} Spectrum of states with total angular momentum $J=0$ for the dimensionless Hamiltonian~\eqref{eq:WeylHamiltonian}. The bottom left figure shows the ground state energy for $\tilde{a}=-1$ as function of $\tilde{\alpha}$, above are the first few excitation energies. The right figure shows the results for in the unitary limit of the two-body interaction, $|\tilde{a}|\rightarrow\infty$.} 
+\includegraphics{Figures/WeylSpectrum}\caption{\label{fig:WeylSpectrum} Spectrum of states with total angular momentum $J=0$ for the dimensionless Hamiltonian~\eqref{eq:WeylHamiltonian}. The bottom left figure shows the ground state energy for $\tilde{a}=-1$ as function of $\tilde{\alpha}_W$, above are the first few excitation energies. The right figure shows the results for in the unitary limit of the two-body interaction, $|\tilde{a}|\rightarrow\infty$. The spectrum is symmetric about $\tilde{\alpha}_W=0$.} 
 \end{figure}
 
 
@@ -283,7 +285,7 @@ In order to find the matrix elements of the pure Rashba coupling given in~\eqref
 \begin{equation}
 V_{R}=i\sqrt{2}\:\alpha_R \left[ k \otimes \sigma \right]_{10}.
 \end{equation}
-We therefore have the two-body Hamiltonian,
+We therefore have the two-body Hamiltonian
 \begin{equation}\label{eq:RashbaHamiltonian}
 \frac{1}{\hbar\omega}H=\left(h_{0,\text{rel}}+i \tilde{\alpha}_R  \left[ \vec{q} \otimes \vec{\sigma} \right]_{10} + \sqrt{2}\pi \tilde{a}(\Lambda) \delta^{(3)}(r)\right)+\left(h_{0,\text{CM}}+i \tilde{\alpha}_R [ \vec{Q}\otimes \vec{\Sigma} ]_{10} \right).
 \end{equation}
@@ -293,7 +295,7 @@ Because the spin-orbit coupling is now a $k=1$ tensor rather than a scalar opera
 &\bra{n'(l's')j';N'L';(j'L')J'J'_z}  [ \vec{q} \otimes \vec{\sigma} ]_{10}  \ket{n(ls)j;NL;(jL)JJ_z} =6 i (-1)^{J+J'-J'_z+j'+L+1}\delta_{N,N'}\delta_{L,L'}\delta_{J_z,J'_z} \\
  &\times\sqrt{(2J+1)(2J'+1)(2j+1)(2j'+1)} \threej{J'}{1}{J}{-J_z}{0}{J_z} \sixj{j'}{J'}{L}{J}{j}{1}
  \renewcommand{\arraystretch}{0.9}
- \ninej{\hphantom{l}l'\hphantom{l}}{\hphantom{l}l\hphantom{l}}{\hphantom{l}1\hphantom{l}}{s'}{s}{1}{j'}{j}{1} (s'-s) \braket{n'l' || q || n l},
+ \ninej{\hphantom{l}l'\hphantom{l}}{\hphantom{l}l\hphantom{l}}{\hphantom{l}1\hphantom{l}}{s'}{s}{1}{j'}{j}{1} (s'-s) \braket{n'l' || q || n l}.
 \end{split}
 \end{equation}
 
@@ -309,7 +311,7 @@ For the CM part of the Hamiltonian we again expand the basis states in the alter
 
 \begin{figure}
 \includegraphics{Figures/RashbaSpectrum}
-\caption{\label{fig:RashbaSpectrum} Spectrum of states with total angular momentum quantum number $J_z=0$ for the Hamiltonian~\eqref{eq:RashbaHamiltonian}. The left figure shows the energies with negative scattering length $\tilde{a}=-1$. The right figure shows the results in the unitary limit $|\tilde{a}|\rightarrow\infty$.} 
+\caption{\label{fig:RashbaSpectrum} Spectrum of states with total angular momentum quantum number $J_z=0$ for the Hamiltonian~\eqref{eq:RashbaHamiltonian}. The left figure shows the energies with negative scattering length $\tilde{a}=-1$. The right figure shows the results in the unitary limit $|\tilde{a}|\rightarrow\infty$. The spectrum is symmetric about $\tilde{\alpha}_R=0$.} 
 \end{figure}
 
 
@@ -317,12 +319,12 @@ Our results for the Rashba SOC are shown in Figure~\ref{fig:RashbaSpectrum}. Bec
 
 \begin{figure}
 \includegraphics{Figures/PerturbativeComparison}
-\caption{\label{fig:ComparisonSpectrum} Comparison of selected spectral lines (solid black) with the perturbative predictions from \cite{PhysRevA.89.033606} (dashed red) when $\tilde{a}=\infty$. }
+\caption{\label{fig:ComparisonSpectrum} Comparison of selected spectral lines (dashed black) with the perturbative predictions from \cite{PhysRevA.89.033606} (solid red) when $\tilde{a}=\infty$. }
 \end{figure}
 
 \begin{figure}
 \includegraphics{Figures/ComparisonNoCM}
-\caption{\label{fig:ComparisonSpectrum2} A comparison of the energy levels with (solid black) and without (dashed red) the inclusion of excitations in the CM coordinate for $\tilde{a}=-1$. The approximation of ignoring CM excitations provides very accurate results for the ground state, but not for excited states.} 
+\caption{\label{fig:ComparisonSpectrum2} A comparison of the energy levels with (dashed black) and without (solid red) the inclusion of excitations in the CM coordinate for $\tilde{a}=-1$. The approximation of ignoring CM excitations provides very accurate results for the ground state, but not for excited states.} 
 \end{figure}
 
 
@@ -337,7 +339,7 @@ Experiments have thus far only realized the effective Hamiltonian with equal str
 
 This is also the most computationally difficult of the three cases. When decomposed into spherical tensors, the interaction~\eqref{eq:Dresselhaus} becomes
 \begin{equation}
-V_D=i\,\alpha_D \left( \left[ k \otimes \sigma \right]_{2,-2}- \left[ k \otimes \sigma \right]_{2,2}\right)
+V_D=i\,\alpha_D \left( \left[ k \otimes \sigma \right]_{2,-2}- \left[ k \otimes \sigma \right]_{2,2}\right),
 \end{equation}
 and the two-particle Hamiltonian in the presence of equal strength Rashba and Dresselhaus SOC is given by~\eqref{eq:RashbaHamiltonian} with $\alpha_R\rightarrow \alpha_{R=D}$ plus the additional spin-orbit terms
 \begin{equation}\label{eq:DresselhausHamiltonian}
@@ -345,7 +347,7 @@ and the two-particle Hamiltonian in the presence of equal strength Rashba and Dr
 \end{equation} 
 Yet again the number of basis states with non-zero matrix elements has increased; no angular momentum quantum numbers are conserved. The only remaining selection rule will be that the interaction does not change the total magnetic quantum number$J_z$ between even and odd. 
 
-Using the same approach as in the previous sections, the matrix elements of the relative Dresselhaus term are,
+Using the same approach as in the previous sections, the matrix elements of the relative Dresselhaus term are
 \begin{equation}\begin{split}
 &\bra{n'(l's')j';N'L';(j'L')J'J'_z} \frac{i \tilde{\alpha}_{R=D}}{\sqrt{2}}\left(  \left[ \vec{q} \otimes \vec{\sigma} \right]_{2,-2} -  \left[ \vec{q} \otimes \vec{\sigma} \right]_{2,2} \right)  \ket{n(ls)j;NL;(jL)JJ_z} = \\
  &\quad\hphantom{\times} i \sqrt{30}(-1)^{J+J'-J'_z+j'+L}\delta_{N,N'}\delta_{L,L'} \sqrt{(2J+1)(2J'+1)(2j+1)(2j'+1)}  \braket{n'l' || q || n l}\\
@@ -353,7 +355,7 @@ Using the same approach as in the previous sections, the matrix elements of the 
  \renewcommand{\arraystretch}{0.9} \ninej{\hphantom{l}l'\hphantom{l}}{\hphantom{l}l\hphantom{l}}{\hphantom{l}1\hphantom{l}}{s'}{s}{1}{j'}{j}{2},
 \end{split}
 \end{equation}
-while the center of mass part is,
+while the center of mass part is 
 \begin{equation}\begin{split}
 &\bra{n'(l's')j';N'L';(j'L')J'J'_z}  \frac{i \tilde{\alpha}_{R=D}}{\sqrt{2}}\left(  \left[ \vec{Q} \otimes \vec{\Sigma} \right]_{2,-2} -  \left[ \vec{Q} \otimes \vec{\Sigma} \right]_{2,2} \right)  \ket{n(ls)j;NL;(jL)JJ_z} =  \\
 &\quad2 i \sqrt{15}(-1)^{J+J'-J'_z+l+1}\delta_{n,n'}\delta_{l,l'}\delta_{s,1}\delta_{s',1}  \\
@@ -369,7 +371,7 @@ The richly structured excitation spectrum of low-lying states is shown in Figure
 \begin{figure}
 \includegraphics{Figures/RashbaDresselhausSpectrum}
 \caption{\label{fig:R=DExcitationSpectrum} 
-Spectrum of states with even total angular momentum magnetic quantum number, $J_z=0,2,\dots$ for the equal strength Rashba-Dresselhaus SOC~\eqref{eq:R=D}. The left figure shows the energies with negative scattering length $\tilde{a}=-1$. The right figure shows the results in the unitary limit $|\tilde{a}|\rightarrow\infty$.} 
+Spectrum of states with even total angular momentum magnetic quantum number, $J_z=0,2,\dots$ for the equal strength Rashba-Dresselhaus SOC~\eqref{eq:R=D}. The left figure shows the energies with negative scattering length $\tilde{a}=-1$. The right figure shows the results in the unitary limit $|\tilde{a}|\rightarrow\infty$. The spectrum is symmetric about $\tilde{\alpha}_{R=D}=0$.} 
 \end{figure}
 
 
