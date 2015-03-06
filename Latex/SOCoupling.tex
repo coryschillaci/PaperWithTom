@@ -274,13 +274,12 @@ Again, the reduced matrix element of the CM momentum changes the parity by conne
 
 Using these matrix elements, we calculated the spectrum of the two interacting particles with Weyl spin-orbit coupling. Our calculations are performed by numerically diagonalizing in a truncated basis of the harmonic oscillator states~\eqref{eq:basisStates}, where a cutoff $2N+L+2n+l+3\leq E_{max}$ is set high enough that the eigenvalues of the matrix have converged to the desired accuracy.  
 
-This approach converges well only when the ground state energy is not too low. In particular, for $a$ positive but very small the principal quantum number of the ground state is increasing from negative infinity as seen in Figure~\ref{fig:BuschSpectrum}. From Figure~\ref{fig:matrixElts}, we can see that as $n$ becomes more negative, the principal quantum number of the dominant matrix element is also increasing. Because convergence of any energy level requires a cutoff much larger than the energy of the most strongly coupled states, a sufficiently high $E_{max}$ to ensure an accurate ground state energy becomes infeasible for small positive $a$. For excited states, $n$ is always positive and matrix elements with similar $n$ always dominate. The strength of the matrix elements follows a similar qualitative behavior for the spin-orbit couplings treated in the following sections where the same issues recur. 
-
 \begin{figure}
 \includegraphics{Figures/WeylConvergence}
 \caption{\label{fig:WeylConvergence}(Color online).  A convergence plot giving the change in energy eigenvalue, $\Delta E$, for the lowest eight energy levels when a shell is added as a function of $E_{max}$.  The left figure shows convergence for $\tilde{a}=-1$ and $\tilde{\alpha}_W=0.5$. In the right panel  we show $\tilde{a}=1$ and $\tilde{\alpha}_W=0.5$, demonstrating that convergence of the states with large negative $n$ is poor.} 
 \end{figure}
 
+This approach converges well only when the ground state energy is not too low. In particular, for $a$ positive but very small the principal quantum number of the ground state is increasing from negative infinity as seen in Figure~\ref{fig:BuschSpectrum}. From Figure~\ref{fig:matrixElts}, we can see that as $n$ becomes more negative, the principal quantum number of the dominant matrix element is also increasing. Because convergence of any energy level requires a cutoff much larger than the energy of the most strongly coupled states, a sufficiently high $E_{max}$ to ensure an accurate ground state energy becomes infeasible for small positive $a$. For excited states, $n$ is always positive and matrix elements with similar $n$ always dominate. The strength of the matrix elements follows a similar qualitative behavior for the spin-orbit couplings treated in the following sections where the same issues recur. 
 
 \begin{figure}
 \includegraphics{Figures/WeylSpectrum}
@@ -289,6 +288,15 @@ This approach converges well only when the ground state energy is not too low. I
 
 
 As a result, convergence of the ground state is actually slower than that for nearby excited states. Furthermore, our approach gives the fatest convergence when $a$ is not small and positive. We compare the rate of convergence of the $\tilde{a}=-1$ and $\tilde{a}=1$ spectra in Figure~\ref{fig:WeylConvergence} to demonstrate the dependence of convergence on the matrix truncation. The actual energy spectrum is shown in Figure~\ref{fig:WeylSpectrum}. 
+
+\begin{figure}
+\includegraphics{Figures/Projections}
+\caption{\label{fig:Projections}(Color online). For different values of the two-body coupling strength $\tilde{a}$, we show the magnitude of the ground state projected onto even parity HO states, given by $\big|  P_+\ket{\psi_{\text{GS}}}\big|^2$ where $P_+$ is an idempotent projection operator. The left figure shows negative $\tilde{a}$, while the right shows positive $\tilde{a}$. Note that the limits $\tilde{a}\rightarrow\pm\infty$ are physically identical.}
+\end{figure}
+
+\color{red}
+One consequence of parity-violation in this system is that the eigenstates are mixtures of the even- and odd-parity basis states described by eqn. \eqref{eq:basisStates}. In figure~\ref{fig:Projections} we visualize how these subspaces are mixed in the ground state as the SOC strength increases. For the non-interacting system, $\tilde{a}=0$, the ground state is mostly negative parity states even at fairly small values of $\tilde{\alpha}_W$. With negative $\tilde{a}$, the mixing of the negative parity states is suppressed as the strength of the two body interaction increases. For positive $\tilde{a}$ the effect is more striking. The mixing is very strongly suppressed for small, positive values and increases when approaching the unitary limit.
+\color{black}
 
 \section{\label{sec:Rashba}The Pure Rashba Coupling}
 
@@ -398,10 +406,10 @@ Our energy calculations were performed in a basis truncated in a consistent way 
 
 We provided plots of a variety of spectra calculated with Weyl, Rashba, and equal weight Rashba-Dresselhaus couplings.  Although in this paper we only show spectra within certain subspaces of conserved angular momentum quantum numbers, the approach presented is fully capable of generating results for all possible states. Larger SO coupling constants are also accessible with larger basis sizes. The general method can easily be adapted to calculate energies for bosonic systems, or to new forms of SOC such as the recently proposed spin-orbital angular momentum coupling \cite{2014arXiv1411.1737S}.
 
-A natural extension of this work is to consider three particles within a trap.  Because of the complex spectrum that is associated with three-body physics at the unitary limit (e.g. Efimov states, limit-cycles, etc.), the spectrum under the influence of an external SOC is expected to be quite rich.  Couplings between the CM and relative motion due to the SOC potentially presents a challenge to traditional few-body techniques, such as the Faddeev equations, that work only within the relative coordinates.  However, in our two-body calculations we found that the coupling of the ground state to the CM motion is weak. If this is also true in the three-body case, then to a good approximation we can ignore the CM motion and utilize existing few-body techniques with little or no modification.  
+A natural extension of this work is to consider three particles within a trap.  Because of the complex spectrum that is associated with three-body physics at the unitary limit (e.g. Efimov states, limit-cycles, etc.), the spectrum under the influence of an external SOC is expected to be quite rich.  Couplings between the CM and relative motion due to the SOC present a potential challenge to traditional few-body techniques, such as the Faddeev equations, that work only within the relative coordinates.  However, in our two-body calculations we found that the coupling of the ground state to the CM motion is weak. If this is also true in the three-body case, then to a good approximation we can ignore the CM motion and utilize existing few-body techniques with little or no modification.  
 
 \section*{Acknowledgements}
-This paper is based in part on work supported by the U.S. Department of Energy, Office of Science, Office of Nuclear Physics, under Award Number DE-SC00046548. We thank \color{red}Paulo Bedaque, \color{black} Jordy de Vries and Timo L{\"a}hde for their input and discussions related to this work.   
+This paper is based in part on work supported by the U.S. Department of Energy, Office of Science, Office of Nuclear Physics, under Award Number DE-SC00046548. We thank Paulo Bedaque, Jordy de Vries and Timo L{\"a}hde for their input and discussions related to this work.   
 
 %\input{SOCoupling.bbl}
 \bibliography{SOCoupling}
