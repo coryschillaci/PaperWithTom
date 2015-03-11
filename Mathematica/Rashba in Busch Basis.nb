@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    636062,      12339]
-NotebookOptionsPosition[    630380,      12162]
-NotebookOutlinePosition[    630735,      12178]
-CellTagsIndexPosition[    630692,      12175]
+NotebookDataLength[    635610,      12322]
+NotebookOptionsPosition[    630086,      12150]
+NotebookOutlinePosition[    630441,      12166]
+CellTagsIndexPosition[    630398,      12163]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -12146,19 +12146,7 @@ Cell[BoxData[{
         "RootPath", ",", "\"\<Saved\>\"", ",", 
          "\"\<RashbaProjectionsaHalf.m\>\""}], "}"}], "]"}], ",", 
       "ProjData"}], "]"}]}], "]"}], ";"}]}], "Input",
- CellChangeTimes->{{3.63487276724581*^9, 3.63487284270103*^9}}],
-
-Cell[BoxData["\t\t"], "Input",
- CellChangeTimes->{{3.6348623434030027`*^9, 3.6348623440598183`*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["a"], "Input",
- CellChangeTimes->{3.6349337925550213`*^9}],
-
-Cell[BoxData["\[Infinity]"], "Output",
- CellChangeTimes->{3.634933793001913*^9}]
-}, Open  ]]
+ CellChangeTimes->{{3.63487276724581*^9, 3.63487284270103*^9}}]
 },
 WindowSize->{632, 722},
 WindowMargins->{{6, Automatic}, {Automatic, 2}},
@@ -12328,12 +12316,7 @@ Cell[CellGroupData[{
 Cell[623065, 11990, 1104, 21, 63, "Input"],
 Cell[624172, 12013, 3974, 73, 270, "Output"]
 }, Open  ]],
-Cell[628161, 12089, 1921, 59, 284, "Input"],
-Cell[630085, 12150, 100, 1, 28, "Input"],
-Cell[CellGroupData[{
-Cell[630210, 12155, 71, 1, 28, "Input"],
-Cell[630284, 12158, 80, 1, 28, "Output"]
-}, Open  ]]
+Cell[628161, 12089, 1921, 59, 284, "Input"]
 }
 ]
 *)
